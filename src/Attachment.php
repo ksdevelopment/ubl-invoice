@@ -10,8 +10,8 @@ use InvalidArgumentException;
 
 class Attachment implements XmlSerializable
 {
-    private $filePath;
-    private $externalReference;
+    protected $filePath;
+    protected $externalReference;
 
     /**
      * @throws Exception exception when the mime type cannot be determined

@@ -8,18 +8,18 @@ use Sabre\Xml\XmlSerializable;
 class InvoiceLine implements XmlSerializable
 {
     public $xmlTagName = 'InvoiceLine';
-    private $id;
+    protected $id;
     protected $invoicedQuantity;
-    private $lineExtensionAmount;
-    private $unitCode = UnitCode::UNIT;
-    private $unitCodeListId;
-    private $taxTotal;
-    private $invoicePeriod;
-    private $note;
-    private $item;
-    private $price;
-    private $accountingCostCode;
-    private $accountingCost;
+    protected $lineExtensionAmount;
+    protected $unitCode = UnitCode::UNIT;
+    protected $unitCodeListId;
+    protected $taxTotal;
+    protected $invoicePeriod;
+    protected $note;
+    protected $item;
+    protected $price;
+    protected $accountingCostCode;
+    protected $accountingCost;
 
     // See CreditNoteLine.php
     protected $isCreditNoteLine = false;

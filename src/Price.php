@@ -7,11 +7,11 @@ use Sabre\Xml\XmlSerializable;
 
 class Price implements XmlSerializable
 {
-    private $priceAmount;
-    private $baseQuantity;
-    private $unitCode = UnitCode::UNIT;
-    private $unitCodeListId;
-    private $allowanceCharge;
+    protected $priceAmount;
+    protected $baseQuantity;
+    protected $unitCode = UnitCode::UNIT;
+    protected $unitCodeListId;
+    protected $allowanceCharge;
 
     /**
      * @return float

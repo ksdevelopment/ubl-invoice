@@ -9,16 +9,16 @@ use InvalidArgumentException;
 
 class TaxCategory implements XmlSerializable
 {
-    private $id;
-    private $idAttributes = [
+    protected $id;
+    protected $idAttributes = [
         'schemeID'   => UNCL5305::UNCL5305,
         'schemeName' => 'Duty or tax or fee category'
     ];
-    private $name;
-    private $percent;
-    private $taxScheme;
-    private $taxExemptionReason;
-    private $taxExemptionReasonCode;
+    protected $name;
+    protected $percent;
+    protected $taxScheme;
+    protected $taxExemptionReason;
+    protected $taxExemptionReasonCode;
 
     /**
      * @return string

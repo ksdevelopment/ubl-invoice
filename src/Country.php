@@ -7,8 +7,8 @@ use Sabre\Xml\XmlSerializable;
 
 class Country implements XmlSerializable
 {
-    private $identificationCode;
-    private $listId;
+    protected $identificationCode;
+    protected $listId;
 
     /**
      * @return mixed

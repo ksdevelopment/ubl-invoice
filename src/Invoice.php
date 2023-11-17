@@ -11,34 +11,34 @@ use InvalidArgumentException;
 class Invoice implements XmlSerializable
 {
     public $xmlTagName = 'Invoice';
-    private $UBLVersionID = '2.1';
-    private $customizationID = '1.0';
-    private $profileID;
-    private $id;
-    private $copyIndicator;
-    private $issueDate;
+    protected $UBLVersionID = '2.1';
+    protected $customizationID = '1.0';
+    protected $profileID;
+    protected $id;
+    protected $copyIndicator;
+    protected $issueDate;
     protected $invoiceTypeCode = InvoiceTypeCode::INVOICE;
-    private $note;
-    private $taxPointDate;
-    private $dueDate;
-    private $paymentTerms;
-    private $accountingSupplierParty;
-    private $accountingCustomerParty;
-    private $supplierAssignedAccountID;
-    private $paymentMeans;
-    private $taxTotal;
-    private $legalMonetaryTotal;
+    protected $note;
+    protected $taxPointDate;
+    protected $dueDate;
+    protected $paymentTerms;
+    protected $accountingSupplierParty;
+    protected $accountingCustomerParty;
+    protected $supplierAssignedAccountID;
+    protected $paymentMeans;
+    protected $taxTotal;
+    protected $legalMonetaryTotal;
     /** @var InvoiceLine[] $invoiceLines */
     protected $invoiceLines;
-    private $allowanceCharges;
-    private $additionalDocumentReferences = [];
-    private $documentCurrencyCode = 'EUR';
-    private $buyerReference;
-    private $accountingCostCode;
-    private $invoicePeriod;
-    private $delivery;
-    private $orderReference;
-    private $contractDocumentReference;
+    protected $allowanceCharges;
+    protected $additionalDocumentReferences = [];
+    protected $documentCurrencyCode = 'EUR';
+    protected $buyerReference;
+    protected $accountingCostCode;
+    protected $invoicePeriod;
+    protected $delivery;
+    protected $orderReference;
+    protected $contractDocumentReference;
 
     /**
      * @return string

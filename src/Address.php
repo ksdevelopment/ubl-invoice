@@ -7,13 +7,13 @@ use Sabre\Xml\XmlSerializable;
 
 class Address implements XmlSerializable
 {
-    private $streetName;
-    private $additionalStreetName;
-    private $buildingNumber;
-    private $cityName;
-    private $postalZone;
-    private $countrySubentity;
-    private $country;
+    protected $streetName;
+    protected $additionalStreetName;
+    protected $buildingNumber;
+    protected $cityName;
+    protected $postalZone;
+    protected $countrySubentity;
+    protected $country;
 
     /**
      * @return string

@@ -7,11 +7,11 @@ use Sabre\Xml\XmlSerializable;
 
 class AdditionalDocumentReference implements XmlSerializable
 {
-    private $id;
-    private $documentType;
-    private $documentTypeCode;
-    private $documentDescription;
-    private $attachment;
+    protected $id;
+    protected $documentType;
+    protected $documentTypeCode;
+    protected $documentDescription;
+    protected $attachment;
 
     /**
      * @return string

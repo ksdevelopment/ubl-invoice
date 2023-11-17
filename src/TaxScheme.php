@@ -7,10 +7,10 @@ use Sabre\Xml\XmlSerializable;
 
 class TaxScheme implements XmlSerializable
 {
-    private $id;
-    private $name;
-    private $taxTypeCode;
-    private $currencyCode;
+    protected $id;
+    protected $name;
+    protected $taxTypeCode;
+    protected $currencyCode;
 
     /**
      * @return string

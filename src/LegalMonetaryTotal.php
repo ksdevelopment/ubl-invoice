@@ -7,12 +7,12 @@ use Sabre\Xml\XmlSerializable;
 
 class LegalMonetaryTotal implements XmlSerializable
 {
-    private $lineExtensionAmount = 0;
-    private $taxExclusiveAmount = 0;
-    private $taxInclusiveAmount = 0;
-    private $allowanceTotalAmount = 0;
-    private $prepaidAmount;
-    private $payableAmount = 0;
+    protected $lineExtensionAmount = 0;
+    protected $taxExclusiveAmount = 0;
+    protected $taxInclusiveAmount = 0;
+    protected $allowanceTotalAmount = 0;
+    protected $prepaidAmount;
+    protected $payableAmount = 0;
 
     /**
      * @return float
